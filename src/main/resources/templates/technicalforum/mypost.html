@@ -1,0 +1,470 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="../../static/assets/vendor/bootstrap/css/bootstrap.min.css">
+    <link href="../../static/assets/vendor/fonts/circular-std/style.css" rel="stylesheet">
+    <link rel="stylesheet" href="../../static/assets/libs/css/style.css">
+    <link rel="stylesheet" href="../../static/assets/vendor/fonts/fontawesome/css/fontawesome-all.css">
+    <link rel="stylesheet" href="../../static/assets/vendor/charts/chartist-bundle/chartist.css">
+    <link rel="stylesheet" href="../../static/assets/vendor/charts/morris-bundle/morris.css">
+    <link rel="stylesheet"
+          href="../../static/assets/vendor/fonts/material-design-iconic-font/css/materialdesignicons.min.css">
+    <link rel="stylesheet" href="../../static/assets/vendor/charts/c3charts/c3.css">
+    <link rel="stylesheet" href="../../static/assets/vendor/fonts/flag-icon-css/flag-icon.min.css">
+    <title>IT Technology Forum</title>
+</head>
+
+<body>
+<!-- ============================================================== -->
+<!-- main wrapper -->
+<!-- ============================================================== -->
+<div class="dashboard-main-wrapper">
+    <!-- ============================================================== -->
+    <!-- navbar -->
+    <!-- ============================================================== -->
+    <div class="dashboard-header">
+        <nav class="navbar navbar-expand-lg bg-white fixed-top">
+            <a class="navbar-brand" href="../index.html">IT Technology Forum</a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
+                    aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse " id="navbarSupportedContent">
+                <ul class="navbar-nav ml-auto navbar-right-top">
+                    <li class="nav-item">
+                        <div id="custom-search" class="top-search-bar">
+                            <input class="form-control" type="text" placeholder="Search..">
+                        </div>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="../index.html">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="../blog/blog.html">博客</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="../ResouceBase/resourcebase.html">资源库</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="/technicalforum.html">技术论坛</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="../itembank/itembank.html">IT题库</a>
+                    </li>
+                    <li class="nav-item dropdown connection">
+                        <a class="nav-link" href="#" id="navbarDropdown" role="button" data-toggle="dropdown"
+                           aria-haspopup="true" aria-expanded="false"> <i class="fas fa-fw fa-th"></i> </a>
+                        <ul class="dropdown-menu dropdown-menu-right connection-dropdown">
+                            <li class="connection-list">
+                                <div class="row">
+                                    <div class="col-xl-4 col-lg-4 col-md-6 col-sm-12 col-12 ">
+                                        <a href="#" class="connection-item"><img
+                                                src="../../static/assets/images/github.png" alt=""> <span>Github</span></a>
+                                    </div>
+                                    <div class="col-xl-4 col-lg-4 col-md-6 col-sm-12 col-12 ">
+                                        <a href="#" class="connection-item"><img
+                                                src="../../static/assets/images/dribbble.png" alt="">
+                                            <span>Dribbble</span></a>
+                                    </div>
+                                    <div class="col-xl-4 col-lg-4 col-md-6 col-sm-12 col-12 ">
+                                        <a href="#" class="connection-item"><img
+                                                src="../../static/assets/images/dropbox.png" alt="">
+                                            <span>Dropbox</span></a>
+                                    </div>
+                                </div>
+                                <div class="row">
+                                    <div class="col-xl-4 col-lg-4 col-md-6 col-sm-12 col-12 ">
+                                        <a href="#" class="connection-item"><img
+                                                src="../../static/assets/images/bitbucket.png" alt="">
+                                            <span>Bitbucket</span></a>
+                                    </div>
+                                    <div class="col-xl-4 col-lg-4 col-md-6 col-sm-12 col-12 ">
+                                        <a href="#" class="connection-item"><img
+                                                src="../../static/assets/images/mail_chimp.png"
+                                                alt=""><span>Mail chimp</span></a>
+                                    </div>
+                                    <div class="col-xl-4 col-lg-4 col-md-6 col-sm-12 col-12 ">
+                                        <a href="#" class="connection-item"><img
+                                                src="../../static/assets/images/slack.png" alt="">
+                                            <span>Slack</span></a>
+                                    </div>
+                                </div>
+                            </li>
+                            <li>
+                                <div class="conntection-footer"><a href="#">More</a></div>
+                            </li>
+                        </ul>
+                    </li>
+                    <li class="nav-item dropdown nav-user">
+                        <a class="nav-link nav-user-img" href="#" id="navbarDropdownMenuLink2" data-toggle="dropdown"
+                           aria-haspopup="true" aria-expanded="false"><img src="../../static/assets/images/avatar-1.jpg"
+                                                                           alt="" class="user-avatar-md rounded-circle"></a>
+                        <div class="dropdown-menu dropdown-menu-right nav-user-dropdown"
+                             aria-labelledby="navbarDropdownMenuLink2">
+                            <div class="nav-user-info">
+                                <h5 class="mb-0 text-white nav-user-name">John Abraham </h5>
+                                <span class="status"></span><span class="ml-2">Available</span>
+                            </div>
+                            <a class="dropdown-item" href="#"><i class="fas fa-user mr-2"></i>Account</a>
+                            <a class="dropdown-item" href="#"><i class="fas fa-cog mr-2"></i>Setting</a>
+                            <a class="dropdown-item" href="#"><i class="fas fa-power-off mr-2"></i>Logout</a>
+                        </div>
+                    </li>
+                </ul>
+            </div>
+        </nav>
+    </div>
+    <!-- ============================================================== -->
+    <!-- end navbar -->
+    <!-- ============================================================== -->
+    <!-- ============================================================== -->
+    <!-- left sidebar -->
+    <!-- ============================================================== -->
+    <div class="nav-left-sidebar sidebar-dark">
+        <div class="menu-list">
+            <nav class="navbar navbar-expand-lg navbar-light">
+                <a class="d-xl-none d-lg-none" href="forumhomepage.html">技术论坛</a>
+                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav"
+                        aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarNav">
+                    <ul class="navbar-nav flex-column">
+                        <li class="nav-divider">
+                            Menu
+                        </li>
+                        <li class="nav-item ">
+                            <a class="nav-link active" href="#" data-toggle="collapse" aria-expanded="false"
+                               data-target="#submenu-1" aria-controls="submenu-1"><i
+                                    class="fa fa-fw fa-user-circle"></i>我的论坛 <span class="badge badge-success">6</span></a>
+                            <div id="submenu-1" class="collapse submenu" style="">
+                                <ul class="nav flex-column">
+                                    <li class="nav-item">
+                                        <a class="nav-link" href="myfollow.html">我的关注</a>
+                                    </li>
+                                    <li class="nav-item">
+                                        <a class="nav-link" href="mycollection.html">我的收藏</a>
+                                    </li>
+                                    <li class="nav-item">
+                                        <a class="nav-link" href="mypost.html">我的帖子</a>
+                                    </li>
+                                    <li class="nav-item">
+                                        <a class="nav-link" href="myreplypost.html">我的回复</a>
+                                    </li>
+                                </ul>
+                            </div>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="forumselection.html"><i class="fa fa-fw fa-rocket"></i>论坛类别选择</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="forumhelp.html"><i class="fas fa-fw fa-chart-pie"></i>论坛帮助</a>
+                        </li>
+                        <li class="nav-item ">
+                            <a class="nav-link" href="#" data-toggle="collapse" aria-expanded="false"
+                               data-target="#submenu-4" aria-controls="submenu-4"><i class="fab fa-fw fa-wpforms"></i>论坛管理</a>
+                            <div id="submenu-4" class="collapse submenu" style="">
+                                <ul class="nav flex-column">
+                                    <li class="nav-item">
+                                        <a class="nav-link" href="topicmanage.html">话题管理</a>
+                                    </li>
+                                    <li class="nav-item">
+                                        <a class="nav-link" href="postmanage.html">帖子管理</a>
+                                    </li>
+                                </ul>
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+            </nav>
+        </div>
+    </div>
+    <!-- ============================================================== -->
+    <!-- end left sidebar -->
+    <!-- ============================================================== -->
+    <!-- ============================================================== -->
+    <!-- wrapper  -->
+    <!-- ============================================================== -->
+    <div class="dashboard-wrapper">
+        <div class="container-fluid dashboard-content">
+            <!-- ============================================================== -->
+            <!-- pageheader -->
+            <!-- ============================================================== -->
+            <div class="row">
+                <div class="col-xl-12 col-lg-12 col-md-12 col-sm-12 col-12">
+                    <div class="page-header">
+                        <h2 class="pageheader-title">我的帖子</h2>
+                        <p class="pageheader-text">Proin placerat ante duiullam scelerisque a velit ac porta, fusce sit
+                            amet vestibulum mi. Morbi lobortis pulvinar quam.</p>
+                        <div class="page-breadcrumb">
+                            <nav aria-label="breadcrumb">
+                                <ol class="breadcrumb">
+                                    <li class="breadcrumb-item"><a href="forumhomepage.html" class="breadcrumb-link">论坛首页</a>
+                                    </li>
+                                    <li class="breadcrumb-item"><a href="#" class="breadcrumb-link">我的论坛</a>
+                                    </li>
+                                    <li class="breadcrumb-item active" aria-current="page">我的帖子</li>
+                                </ol>
+                            </nav>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- ============================================================== -->
+            <!-- end pageheader -->
+            <!-- ============================================================== -->
+            <div class="container-fluid">
+                <div class="email-inbox-header">
+                    <div class="row">
+                        <div class="col-lg-6">
+                            <div class="email-title"> Inbox <span
+                                    class="new-messages">(2 new messages)</span></div>
+                        </div>
+                        <div class="col-lg-6">
+                            <div class="email-search">
+                                <div class="input-group input-search">
+                                    <input class="form-control" type="text"
+                                           placeholder="Search mail..."><span class="input-group-btn">
+                                       <button class="btn btn-secondary" type="button"><i
+                                               class="fas fa-search"></i></button></span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="email-filters">
+                    <div class="email-filters-left">
+                        <label class="custom-control custom-checkbox be-select-all">
+                            <input class="custom-control-input chk_all" type="checkbox"
+                                   name="chk_all"><span class="custom-control-label"></span>
+                        </label>
+                        <div class="btn-group">
+                            <button class="btn btn-light dropdown-toggle" data-toggle="dropdown"
+                                    type="button">
+                                With selected <span class="caret"></span></button>
+                            <div class="dropdown-menu" role="menu"><a class="dropdown-item" href="#">Mark
+                                as rea</a><a class="dropdown-item" href="#">Mark as unread</a><a
+                                    class="dropdown-item" href="#">Spam</a>
+                                <div class="dropdown-divider"></div>
+                                <a class="dropdown-item" href="#">Delete</a>
+                            </div>
+                        </div>
+                        <div class="btn-group">
+                            <button class="btn btn-light" type="button">Archive</button>
+                            <button class="btn btn-light" type="button">Span</button>
+                            <button class="btn btn-light" type="button">Delete</button>
+                        </div>
+                        <div class="btn-group">
+                            <button class="btn btn-light dropdown-toggle" data-toggle="dropdown"
+                                    type="button">Order by <span class="caret"></span></button>
+                            <div class="dropdown-menu dropdown-menu-right" role="menu"><a
+                                    class="dropdown-item" href="#">Date</a><a class="dropdown-item"
+                                                                              href="#">From</a><a
+                                    class="dropdown-item" href="#">Subject</a>
+                                <div class="dropdown-divider"></div>
+                                <a class="dropdown-item" href="#">Size</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="email-filters-right"><span class="email-pagination-indicator">1-50 of 253</span>
+                        <div class="btn-group email-pagination-nav">
+                            <button class="btn btn-light" type="button"><i
+                                    class="fas fa-angle-left"></i></button>
+                            <button class="btn btn-light" type="button"><i
+                                    class="fas fa-angle-right"></i></button>
+                        </div>
+                    </div>
+                </div>
+                <div class="email-list">
+                    <div class="email-list-item email-list-item--unread">
+                        <div class="email-list-actions">
+                            <label class="custom-control custom-checkbox">
+                                <input class="custom-control-input checkboxes" type="checkbox" value="1"
+                                       id="one"><span class="custom-control-label"></span>
+                            </label><a class="favorite active" href="#"><span><i
+                                class="fas fa-star"></i></span></a>
+                        </div>
+                        <div class="email-list-detail"><span class="date float-right"><span
+                                class="icon"><i class="fas fa-paperclip"></i> </span>28 Jul</span><span
+                                class="from">Penelope Thornton</span>
+                            <p class="msg">Urgent - You forgot your keys in the class room, please come
+                                imediatly!</p>
+                        </div>
+                    </div>
+                    <div class="email-list-item email-list-item--unread">
+                        <div class="email-list-actions">
+                            <label class="custom-control custom-checkbox">
+                                <input class="custom-control-input checkboxes" type="checkbox" value="2"
+                                       id="two"><span class="custom-control-label"></span>
+                            </label><a class="favorite" href="#"><span><i
+                                class="fas fa-star"></i></span></a>
+                        </div>
+                        <div class="email-list-detail"><span class="date float-right"></span><span
+                                class="date float-right"><span class="icon"><i
+                                class="fas fa-paperclip"></i></span> 13 Jul</span><span class="from">Benji Harper</span>
+                            <p class="msg">Urgent - You forgot your keys in the class room, please come
+                                imediatly!</p>
+                        </div>
+                    </div>
+                    <div class="email-list-item">
+                        <div class="email-list-actions">
+                            <label class="custom-control custom-checkbox">
+                                <input class="custom-control-input checkboxes" type="checkbox" value="3"
+                                       id="three"><span class="custom-control-label"></span>
+                            </label><a class="favorite" href="#"><span><i
+                                class="fas fa-star"></i></span></a>
+                        </div>
+                        <div class="email-list-detail"><span class="date float-right">23 Jun</span><span
+                                class="from">Justine Myranda</span>
+                            <p class="msg">Urgent - You forgot your keys in the class room, please come
+                                imediatly!</p>
+                        </div>
+                    </div>
+                    <div class="email-list-item">
+                        <div class="email-list-actions">
+                            <label class="custom-control custom-checkbox">
+                                <input class="custom-control-input checkboxes" type="checkbox" value="4"
+                                       id="four"><span class="custom-control-label"></span>
+                            </label><a class="favorite" href="#"><span><i
+                                class="fas fa-star"></i></span></a>
+                        </div>
+                        <div class="email-list-detail"><span class="date float-right">17 May</span><span
+                                class="from">John Doe</span>
+                            <p class="msg">Urgent - You forgot your keys in the class room, please come
+                                imediatly!</p>
+                        </div>
+                    </div>
+                    <div class="email-list-item">
+                        <div class="email-list-actions">
+                            <label class="custom-control custom-checkbox">
+                                <input class="custom-control-input checkboxes" type="checkbox" value="5"
+                                       id="five"><span class="custom-control-label"></span>
+                            </label><a class="favorite" href="#"><span><i
+                                class="fas fa-star"></i></span></a>
+                        </div>
+                        <div class="email-list-detail"><span class="date float-right">16 May</span><span
+                                class="from">Sherwood Clifford</span>
+                            <p class="msg">Urgent - You forgot your keys in the class room, please come
+                                imediatly!</p>
+                        </div>
+                    </div>
+                    <div class="email-list-item">
+                        <div class="email-list-actions">
+                            <label class="custom-control custom-checkbox">
+                                <input class="custom-control-input checkboxes" type="checkbox" value="6"
+                                       id="six"><span class="custom-control-label"></span>
+                            </label><a class="favorite" href="#"><span><i
+                                class="fas fa-star"></i></span></a>
+                        </div>
+                        <div class="email-list-detail"><span class="date float-right">12 May</span><span
+                                class="from">Kristopher Donny</span>
+                            <p class="msg">Urgent - You forgot your keys in the class room, please come
+                                imediatly!</p>
+                        </div>
+                    </div>
+                    <div class="email-list-item">
+                        <div class="email-list-actions">
+                            <label class="custom-control custom-checkbox">
+                                <input class="custom-control-input checkboxes" type="checkbox" value="7"
+                                       id="seven"><span class="custom-control-label"></span>
+                            </label><a class="favorite" href="#"><span><i
+                                class="fas fa-star"></i></span></a>
+                        </div>
+                        <div class="email-list-detail"><span class="date float-right">12 May</span><span
+                                class="from">Kristopher Donny</span>
+                            <p class="msg">Urgent - You forgot your keys in the class room, please come
+                                imediatly!</p>
+                        </div>
+                    </div>
+                    <div class="email-list-item">
+                        <div class="email-list-actions">
+                            <label class="custom-control custom-checkbox">
+                                <input class="custom-control-input checkboxes" type="checkbox" value="8"
+                                       id="eight"><span class="custom-control-label"></span>
+                            </label><a class="favorite" href="#"><span><i
+                                class="fas fa-star"></i></span></a>
+                        </div>
+                        <div class="email-list-detail"><span class="date float-right">12 May</span><span
+                                class="from">Kristopher Donny</span>
+                            <p class="msg">Urgent - You forgot your keys in the class room, please come
+                                imediatly!</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- ============================================================== -->
+            <!-- end main wrapper -->
+            <!-- ============================================================== -->
+            <!-- ============================================================== -->
+            <!-- footer -->
+            <!-- ============================================================== -->
+            <div class="footer">
+                <div class="container-fluid">
+                    <div class="row">
+                        <div class="col-xl-6 col-lg-6 col-md-6 col-sm-12 col-12">
+
+                        </div>
+                        <div class="col-xl-6 col-lg-6 col-md-6 col-sm-12 col-12">
+                            <div class="text-md-right footer-links d-none d-sm-block">
+                                <a href="javascript: void(0);">About</a>
+                                <a href="javascript: void(0);">Support</a>
+                                <a href="javascript: void(0);">Contact Us</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- ============================================================== -->
+            <!-- end footer -->
+            <!-- ============================================================== -->
+        </div>
+    </div>
+    <!-- ============================================================== -->
+    <!-- end wrapper  -->
+    <!-- ============================================================== -->
+</div>
+<!-- ============================================================== -->
+<!-- end main wrapper  -->
+<!-- ============================================================== -->
+<!-- Optional JavaScript -->
+<!-- jquery 3.3.1 -->
+<script src="../../static/assets/vendor/jquery/jquery-3.3.1.min.js"></script>
+<!-- bootstap bundle js -->
+<script src="../../static/assets/vendor/bootstrap/js/bootstrap.bundle.js"></script>
+<!-- slimscroll js -->
+<script src="../../static/assets/vendor/slimscroll/jquery.slimscroll.js"></script>
+<!-- main js -->
+<script src="../../static/assets/libs/js/main-js.js"></script>
+<!-- chart chartist js -->
+<script src="../../static/assets/vendor/charts/chartist-bundle/chartist.min.js"></script>
+<!-- sparkline js -->
+<script src="../../static/assets/vendor/charts/sparkline/jquery.sparkline.js"></script>
+<!-- morris js -->
+<script src="../../static/assets/vendor/charts/morris-bundle/raphael.min.js"></script>
+<script src="../../static/assets/vendor/charts/morris-bundle/morris.js"></script>
+<script>
+    $(document).ready(function () {
+
+        // binding the check all box to onClick event
+        $(".chk_all").click(function () {
+
+            var checkAll = $(".chk_all").prop('checked');
+            if (checkAll) {
+                $(".checkboxes").prop("checked", true);
+            } else {
+                $(".checkboxes").prop("checked", false);
+            }
+
+        });
+
+    });
+
+</script>
+</body>
+
+</html>
